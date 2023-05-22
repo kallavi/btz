@@ -1,0 +1,164 @@
+$grid-columns: 24 !default;
+
+%fix-btn {
+    background-color: rgba(0,0,0,0);
+    border:1px solid #ffffff;
+    font-family: "greycliff_extrabold";
+    font-size: 20px;
+    height:54px;
+    color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(189, 24, 34, 0.25);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all .3s linear;
+    &:focus {
+        outline: 0;
+        border: none;
+    }
+    @media screen and (min-width: 992px) {
+        &:hover {
+            background-color: #ffffff;
+            color:#bd1822;
+        }
+    }
+    @media screen and (max-width:1400px) {
+        height: 46.98px!important;
+        font-size:16px!important;
+    }
+    @media screen and (max-width:991px) {
+        height: 42.98px!important;
+        font-size:18px!important;
+        @media screen and (max-height:580px) {
+			font-size: 14px!important;
+		}
+    }
+    @media screen and (max-width:480px) {
+        height: 42.98px!important;
+        font-size:18px!important;
+    }
+    @media screen and (min-width:1922px) {
+        height: 65px!important;
+        font-size:22px!important;
+    }
+}
+
+@import "../plugin/bootstrap/scss/bootstrap.scss";
+@import "../plugin/bootstrap/scss/functions";
+@import "../plugin/bootstrap/scss/variables";
+@import "../plugin/bootstrap/scss/maps";
+@import "../plugin/bootstrap/scss/mixins";
+@import "../plugin/bootstrap/scss/utilities";
+$utilities: map-merge(
+    $utilities,
+    (
+        "width":
+            map-merge(
+                map-get($utilities, "width"),
+                (
+                    values:
+                        map-merge(
+                            map-get(map-get($utilities, "width"), "values"),
+                            (
+                                10: 10%,
+                            )
+                        ),
+                )
+            ),
+    )
+);
+
+// $millet: #D30000;
+// $ata: #2D374D;
+// $memleket:#074594;
+
+/*colors change class name*/
+// $colors: (
+//     cumhur: $cumhur,
+//     millet: $millet,
+//     ata: $ata,
+//     memleket:$memleket,
+// );
+
+/*bg-red gibi class ismine gore background rengi verir. Bu classlar colors degişkenınden gelıyor.*/
+// @each $name, $color in $colors {
+//     .bg-#{$name} {
+//         background-color: $color;
+//         @media screen and (min-width:993px) {
+//             &:hover{
+//                 background-color: $color;
+//                 color:$white;
+//             }
+//             &.onHover{
+//                 &:hover {
+//                     background-color: $white!important;
+//                     color:$color;
+//                 }
+//             }
+//         }
+//     }
+//     .text-#{$name} {
+//         color: $color;
+//         @media screen and (min-width:993px) {
+//             &:hover {
+//                 color: $color;
+//             }
+//         }
+//     }
+// }
+
+/*genel padding style*/
+.gPx-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.gPx-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.gPx-2 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.gPx-3 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.gPx-4 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.gPx-5 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.mH-initial {
+    max-height: initial !important;
+}
+@media screen and (max-width: 993px) {
+    .mPx-0 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .mPx-1 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .mPx-2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .mPx-3 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .mPx-4 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .mPx-5 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

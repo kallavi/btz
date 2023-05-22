@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----favicon set-->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/statics/favicon-set/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/statics/favicon-set/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/statics/favicon-set/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/statics/favicon-set/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/statics/favicon-set/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/statics/favicon-set/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/statics/favicon-set/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/statics/favicon-set/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/statics/favicon-set/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/statics/favicon-set/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/statics/favicon-set/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/statics/favicon-set/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/statics/favicon-set/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/statics/favicon-set/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/statics/favicon-set/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!----favicon set end-->
+    <title>Büyük Türkiye Zaferi</title>
+    <link rel="stylesheet" href="assets/plugin/animate.min.css">
+    <link rel="stylesheet" href="assets/css/app.css?version=2">
+    <script type="text/javascript" src="assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body id="mainBody">
+    <div class="preloader">
+        <div class="preloader-spin">
+            <img src="assets/images/statics/loading.gif" alt="loading.gif">
+        </div>
+    </div>
+    <div class="mainBody">
+        <div class="bgImage">
+            <img src="http://test-ise.kalyonhost.com/assets/img/bg-2.png" alt="">
+        </div>
+        <div class="container-fluid g-0 m-0 gPx-5 mPx-2 h-100 mH-50">
+            <div class="col-lg-15 d-flex align-items-center justify-content-end h-100">
+                <div class="d-flex h-100 ms-auto sloganWrapper">
+                    <div class="d-flex flex-column align-items-center justify-content-center contentWrapper h-100">
+                        <img class="animate__animated animate__fadeInDown animate__delay-1s slogan" src="assets/images/statics/buyukturkiyezaferi.svg" alt="">
+                        <!-- <img class="d-none d-lg-block my-2 animate__animated animate__fadeInLeft animate__delay-1s  slogan2" src="assets/images/media/buyuk-istanbul.svg" alt=""> -->
+                        <div class="paragraph py-lg-5 animate__animated animate__fadeIn animate__delay-1s">
+                            <p>Adını Yaz Büyük Türkiye Zaferi’ne
+                                Ortak Ol!</p>
+                        </div>
+                        <div class="row formWrapper col-lg-10 col-20 g-lg-3 g-2 needs-validation animate__animated animate__fadeIn animate__delay-2s pb-lg-5">
+
+
+                            <div class="position-relative mt-lg-3">
+                                <input type="text" class="form-control text-center" id="nameSurname" onfocus="toggleKeyboard(true)" onblur="toggleKeyboard(false)" onkeyup="buyuk()" placeholder="Ad Soyad Giriniz" required>
+                                <div class="d-none text-danger mt-2 text-center" id="validation">
+                                    Lütfen Adınızı Soyadınızı .
+                                </div>
+                            </div>
+                            <div>
+                                <!-- <button data-bs-toggle="modal" data-bs-target="#modalTse" class="fix-btn w-100"
+                                        id="indirButton">OLUŞTUR</button> -->
+                                <button class="fix-btn w-100" onclick="indir()" id="indirButton">OLUŞTUR</button>
+                            </div>
+                        </div>
+                        <div class="bottomLogo animate__animated animate__fadeInUp animate__delay-1s">
+                            <!-- <img class="d-block d-lg-none" src="assets/images/media/buyuk-istanbul-mobil.svg" alt=""> -->
+                            <div class="d-flex align-items-center justify-content-center pb-lg-5">
+                                <a class="me-lg-4 me-3 turkiyeLogo d-none d-lg-block" href="https://turkiyeyuzyili.com/" target="_blank"><img class="" src="assets/images/statics/logo-footer.svg" alt=""></a>
+                                <a class="ms-lg-4 ms-lg-3 akpartiLogo" href="https://www.akpartiistanbul.com/" target="_blank"><img src="assets/images/statics/akparti-footer.svg" alt=""></a>
+                            </div>
+                            <a class="hashtag" href="javascript:;">#BüyükTürkiyeZaferi</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mRelative d-lg-block d-none">
+            <img class="fixedImg position-absolute end-0 bottom-0 animate__animated animate__fadeInRight animate__delay-1s" src="assets/images/statics/recepTayyipErdogan.png" alt="Recep Tayyip Erdoğan">
+        </div>
+        <img class="mobileBottomImg d-lg-none d-block position-absolute bottom-0 end-0 animate__animated animate__fadeInRight animate__delay-1s" src="assets/images/statics/recepTayyipErdogan.png" alt="Recep Tayyip Erdoğan">
+    </div>
+    <!----İmage Modal-->
+    <div class="modal fade" id="modalTse" tabindex="-1" aria-labelledby="exampleModalTitle" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content h-100">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="imageContent">
+
+                        <div class="imageWrapper">
+                            <img src="assets/images/back.jpg" alt="">
+                        </div>
+                        <div class="buttonWrapper bottom-0 w-100">
+                            <button class="downloadButton" onclick="download()"><img
+                                        src="assets/images/statics/icon/download.svg" alt=""><span>İndir</span></button>
+                            <!-- <div class="socialMediaWrapper">
+                                <span>Paylaş</span>
+                                <div class="buttons">
+                                    <button class="button shareButton" data-sharer="facebook" data-hashtag="hashtag" data-url="https://ellisonleao.github.io/sharer.js/"><img
+                                            src="assets/images/statics/icon/Facebook.svg" alt=""></button>
+                                    <button class="button shareButton" data-sharer="telegram" data-title="Checkout Sharer.js!" data-url="https://ellisonleao.github.io/sharer.js/"><img
+                                            src="assets/images/statics/icon/Telegram.svg" alt=""></button>
+                                    <button class="button shareButton" data-sharer="twitter" data-title="Checkout Sharer.js!" data-hashtags="awesome, sharer.js" data-url="https://ellisonleao.github.io/sharer.js/"><img
+                                            src="assets/images/statics/icon/Twitter.svg" alt=""></button>
+                                </div> -->
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <canvas id="hatira" width="1080" height="1920" style="
+				position: absolute;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				z-index: -1;
+				display: none;
+			">
+        </canvas>
+    <script type="text/javascript" src="assets/js/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="assets/plugin/sharer.min.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+
+</html>

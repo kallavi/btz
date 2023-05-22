@@ -1,0 +1,134 @@
+.customIcon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "iconFont" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow2:before {
+  content: "\e904";
+}
+
+.icon-back:before {
+  content: "\e905";
+}
+
+.icon-download:before {
+  content: "\e914";
+}
+
+.icon-email:before {
+  content: "\e915";
+}
+
+.icon-facebook:before {
+  content: "\e916";
+}
+
+.icon-forward:before {
+  content: "\e917";
+}
+
+.icon-instagram:before {
+  content: "\e918";
+}
+
+.icon-plus2:before {
+  content: "\e919";
+}
+
+.icon-return:before {
+  content: "\e91a";
+}
+
+.icon-twitter:before {
+  content: "\e91b";
+}
+
+.icon-whatsapp:before {
+  content: "\e91c";
+}
+
+.icon-arrow:before {
+  content: "\e900";
+}
+
+.icon-camera:before {
+  content: "\e901";
+}
+
+.icon-cross:before {
+  content: "\e902";
+}
+
+.icon-cross2:before {
+  content: "\e903";
+}
+
+.icon-hand:before {
+  content: "\e906";
+}
+
+.icon-link:before {
+  content: "\e907";
+}
+
+.icon-logout:before {
+  content: "\e908";
+}
+
+.icon-minus:before {
+  content: "\e909";
+}
+
+.icon-photo-upload:before {
+  content: "\e90a";
+}
+
+.icon-photo:before {
+  content: "\e90b";
+}
+
+.icon-plus:before {
+  content: "\e90c";
+}
+
+.icon-search:before {
+  content: "\e90d";
+}
+
+.icon-settings:before {
+  content: "\e90e";
+}
+
+.icon-share:before {
+  content: "\e90f";
+}
+
+.icon-tags:before {
+  content: "\e910";
+}
+
+.icon-upload:before {
+  content: "\e911";
+  color: #074594;
+}
+
+.icon-user .path1:before {
+  content: "\e912";
+  color: rgb(255, 255, 255);
+  opacity: 0.4;
+}
+
+.icon-user .path2:before {
+  content: "\e913";
+  margin-left: -0.7890625em;
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=icon.css.map */

@@ -11932,15 +11932,19 @@ img.slogan2 {
 }
 
 .mobileCenterContent {
-  align-self: center;
   height: 100%;
+}
+@media screen and (min-width: 991px) {
+  .mobileCenterContent {
+    align-self: center;
+  }
 }
 @media screen and (max-width: 991px) {
   .mobileCenterContent {
+    height: auto;
     margin: 0 auto !important;
     width: 46%;
-    height: 60%;
-    padding-top: 50px;
+    padding-top: 150px;
   }
 }
 @media screen and (max-width: 600px) {

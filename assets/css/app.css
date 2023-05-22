@@ -11681,7 +11681,7 @@ input ::placeholder {
 }
 
 .contentWrapper {
-  padding-top: 53px;
+  padding-top: 65px;
   padding-right: 31px;
   padding-bottom: 65px;
 }
@@ -11695,6 +11695,7 @@ input ::placeholder {
     padding-right: 0;
     padding-top: 0;
     padding-bottom: 0;
+    align-self: center;
     width: 100%;
   }
 }
@@ -11802,7 +11803,7 @@ input.form-control:focus, input.form-control:hover {
 @media screen and (min-width: 1922px) {
   .formWrapper {
     width: 70% !important;
-    padding: 60px 0;
+    padding: 0 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -11861,7 +11862,6 @@ img.slogan2 {
 }
 @media screen and (min-width: 1922px) {
   .paragraph {
-    padding-top: 60px !important;
     padding-bottom: 0 !important;
   }
 }
@@ -11937,6 +11937,9 @@ img.slogan2 {
 @media screen and (min-width: 991px) {
   .mobileCenterContent {
     align-self: center;
+    min-height: 600px;
+    justify-content: space-between !important;
+    max-height: 800px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -11944,7 +11947,7 @@ img.slogan2 {
     height: auto;
     margin: 0 auto !important;
     width: 46%;
-    padding-top: 150px;
+    padding-top: 10vh;
   }
 }
 @media screen and (max-width: 600px) {

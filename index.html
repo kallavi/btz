@@ -40,40 +40,43 @@
         <div class="bgImage">
             <img src="http://test-ise.kalyonhost.com/assets/img/bg-2.png" alt="">
         </div>
-        <div class="container-fluid g-0 m-0 gPx-5 mPx-2 h-100 mH-50">
+        <div class="container-fluid g-0 m-0 gPx-5 mPx-0 h-100">
             <div class="col-lg-15 d-flex align-items-center justify-content-end h-100">
-                <div class="d-flex h-100 ms-auto sloganWrapper">
-                    <div class="d-flex flex-column align-items-center justify-content-center contentWrapper h-100">
-                        <img class="animate__animated animate__fadeInDown animate__delay-1s slogan" src="assets/images/statics/buyukturkiyezaferi.svg" alt="">
-                        <!-- <img class="d-none d-lg-block my-2 animate__animated animate__fadeInLeft animate__delay-1s  slogan2" src="assets/images/media/buyuk-istanbul.svg" alt=""> -->
-                        <div class="paragraph py-lg-5 animate__animated animate__fadeIn animate__delay-1s">
-                            <p>Adını Yaz Büyük Türkiye Zaferi’ne
-                                Ortak Ol!</p>
-                        </div>
-                        <div class="row formWrapper col-lg-10 col-20 g-lg-3 g-2 needs-validation animate__animated animate__fadeIn animate__delay-2s pb-lg-5">
+                <div class="d-flex ms-auto sloganWrapper h-100">
+                    <div class="d-flex flex-column align-items-center justify-content-between contentWrapper h-100">
+                        <div class="d-flex flex-column align-items-center justify-content-center mobileCenterContent">
+                            <img class="animate__animated animate__fadeInDown animate__delay-1s slogan" src="assets/images/statics/buyukturkiyezaferi.svg" alt="">
+                            <!-- <img class="d-none d-lg-block my-2 animate__animated animate__fadeInLeft animate__delay-1s  slogan2" src="assets/images/media/buyuk-istanbul.svg" alt=""> -->
+                            <div class="paragraph py-lg-5 animate__animated animate__fadeIn animate__delay-1s">
+                                <p>Adını Yaz Büyük Türkiye Zaferi’ne
+                                    Ortak Ol!</p>
+                            </div>
+                            <div class="row formWrapper col-lg-10 col-20 g-lg-3 g-2 needs-validation animate__animated animate__fadeIn animate__delay-2s pb-lg-5">
 
 
-                            <div class="position-relative mt-lg-3">
-                                <input type="text" class="form-control text-center" id="nameSurname" onfocus="toggleKeyboard(true)" onblur="toggleKeyboard(false)" onkeyup="buyuk()" placeholder="Ad Soyad Giriniz" required>
-                                <div class="d-none text-light mt-2 text-center" id="validation">
-                                    Lütfen Adınızı Soyadınızı .
+                                <div class="position-relative mt-lg-3">
+                                    <input type="text" class="form-control text-center" id="nameSurname" onfocus="toggleKeyboard(true)" onblur="toggleKeyboard(false)" onkeyup="buyuk()" placeholder="Ad Soyad Giriniz" required>
+                                    <div class="d-none text-light mt-2 text-center" id="validation">
+                                        Lütfen Adınızı Soyadınızı .
+                                    </div>
+                                </div>
+                                <div>
+                                    <!-- <button data-bs-toggle="modal" data-bs-target="#modalTse" class="fix-btn w-100"
+                                            id="indirButton">OLUŞTUR</button> -->
+                                    <button class="fix-btn w-100" onclick="indir()" id="indirButton">OLUŞTUR</button>
                                 </div>
                             </div>
-                            <div>
-                                <!-- <button data-bs-toggle="modal" data-bs-target="#modalTse" class="fix-btn w-100"
-                                        id="indirButton">OLUŞTUR</button> -->
-                                <button class="fix-btn w-100" onclick="indir()" id="indirButton">OLUŞTUR</button>
-                            </div>
-                        </div>
-                        <div class="bottomLogo animate__animated animate__fadeInUp animate__delay-1s">
-                            <!-- <img class="d-block d-lg-none" src="assets/images/media/buyuk-istanbul-mobil.svg" alt=""> -->
-                            <div class="d-flex align-items-center justify-content-center pb-lg-5">
-                                <a class="me-lg-4 me-3 turkiyeLogo d-none d-lg-block" href="https://turkiyeyuzyili.com/" target="_blank"><img class="" src="assets/images/statics/logo-footer.svg" alt=""></a>
-                                <a class="ms-lg-4 ms-lg-3 akpartiLogo" href="https://www.akpartiistanbul.com/" target="_blank"><img src="assets/images/statics/akparti-footer.svg" alt=""></a>
-                            </div>
-                            <a class="hashtag" href="javascript:;">#BüyükTürkiyeZaferi</a>
+                            <div class="bottomLogo animate__animated animate__fadeInUp animate__delay-1s">
+                                <!-- <img class="d-block d-lg-none" src="assets/images/media/buyuk-istanbul-mobil.svg" alt=""> -->
+                                <div class="d-flex align-items-center justify-content-center pb-lg-5">
+                                    <a class="me-lg-4 me-3 turkiyeLogo d-none d-lg-block" href="https://turkiyeyuzyili.com/" target="_blank"><img class="" src="assets/images/statics/logo-footer.svg" alt=""></a>
+                                    <a class="ms-lg-4 ms-lg-3 akpartiLogo" href="https://www.akpartiistanbul.com/" target="_blank"><img src="assets/images/statics/akparti-footer.svg" alt=""></a>
+                                </div>
+                                <a class="hashtag" href="javascript:;">#BüyükTürkiyeZaferi</a>
 
+                            </div>
                         </div>
+                        <img class="mobileBottomImg d-lg-none d-block position-relative bottom-0 end-0 animate__animated animate__fadeInRight animate__delay-1s" src="assets/images/statics/recepTayyipErdogan.png" alt="Recep Tayyip Erdoğan">
                     </div>
                 </div>
             </div>
@@ -81,7 +84,6 @@
         <div class="mRelative d-lg-block d-none">
             <img class="fixedImg position-absolute end-0 bottom-0 animate__animated animate__fadeInRight animate__delay-1s" src="assets/images/statics/recepTayyipErdogan.png" alt="Recep Tayyip Erdoğan">
         </div>
-        <img class="mobileBottomImg d-lg-none d-block position-absolute bottom-0 end-0 animate__animated animate__fadeInRight animate__delay-1s" src="assets/images/statics/recepTayyipErdogan.png" alt="Recep Tayyip Erdoğan">
     </div>
     <!----İmage Modal-->
     <div class="modal fade" id="modalTse" tabindex="-1" aria-labelledby="exampleModalTitle" aria-hidden="true">

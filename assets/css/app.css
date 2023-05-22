@@ -11689,20 +11689,19 @@ input ::placeholder {
 @media screen and (max-width: 991px) {
   .contentWrapper {
     padding-right: 0;
-    padding-top: 5vh;
-    padding-bottom: 44px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
   .contentWrapper {
     padding-bottom: 0;
     padding-top: 0;
-    height: 48vh;
   }
 }
 @media screen and (max-width: 480px) and (max-height: 700px) {
   .contentWrapper {
-    padding-top: 60px;
     padding-top: 0;
   }
 }
@@ -11934,67 +11933,70 @@ img.slogan2 {
   color: #ffffff;
 }
 
+.mobileCenterContent {
+  align-self: center;
+  height: 100%;
+}
+@media screen and (max-width: 991px) {
+  .mobileCenterContent {
+    margin: 0 auto !important;
+    width: 46%;
+    height: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mobileCenterContent {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mobileCenterContent {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 480px) and (min-height: 700px) {
+  .mobileCenterContent {
+    width: 100%;
+  }
+}
+
+.sloganWrapper {
+  width: 100%;
+}
+
 .mobileBottomImg {
   max-width: 94vw;
   max-height: 56.5vh;
   margin-right: -64px;
 }
-@media screen and (max-height: 715px) {
+@media screen and (max-width: 992px) {
   .mobileBottomImg {
-    max-height: 50vh;
-    margin-right: -51px;
-    margin-bottom: 0;
+    position: relative;
+    margin-left: auto;
+    right: -50px;
+    width: 334px;
+    bottom: -36px;
   }
 }
-@media screen and (max-height: 700px) {
+@media screen and (max-width: 992px) and (max-height: 750px) {
   .mobileBottomImg {
-    max-height: 46vh;
+    right: -16px;
+    width: 347px;
+    bottom: 0;
   }
 }
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 992px) and (max-height: 700px) {
   .mobileBottomImg {
-    max-height: 51vh;
-    margin-right: -33px;
+    right: -29px;
+    width: 292px;
   }
 }
-@media screen and (max-height: 560px) {
+@media screen and (max-width: 992px) and (max-height: 600px) {
   .mobileBottomImg {
-    max-height: 50vh;
-    margin-right: -13px;
-  }
-}
-@media screen and (min-width: 414px) {
-  .mobileBottomImg {
-    max-width: 75vw;
-    max-height: 56.5vh;
+    right: -4px;
+    width: auto;
+    height: 45.7vh;
     margin-right: 0;
-  }
-}
-@media screen and (max-width: 768px) and (min-height: 740px) {
-  .mobileBottomImg {
-    max-height: 51.5vh;
-    margin-bottom: 0;
-    margin-right: -68px;
-  }
-}
-@media screen and (min-width: 414px) and (max-width: 991px) {
-  .mobileBottomImg {
-    max-width: 102vw;
-    margin-right: -79px !important;
-    max-height: 50vh !important;
-  }
-}
-@media screen and (max-width: 390px) and (min-height: 800px) {
-  .mobileBottomImg {
-    max-height: 51.5vh;
-    margin-bottom: 0;
-    margin-right: -80px;
-    max-width: 102vw;
-  }
-}
-@media screen and (max-width: 375px) and (max-height: 700px) {
-  .mobileBottomImg {
-    max-height: 52vh;
   }
 }
 
@@ -12042,28 +12044,6 @@ img.slogan2 {
   .bottomLogo > div {
     padding-top: 0;
     padding-left: 0;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .sloganWrapper {
-    margin: 0 auto !important;
-    width: 46%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .sloganWrapper {
-    width: 75%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .sloganWrapper {
-    width: 95%;
-  }
-}
-@media screen and (max-width: 480px) and (min-height: 700px) {
-  .sloganWrapper {
     width: 100%;
   }
 }

@@ -31,41 +31,31 @@ function buyuk() {
 		);
 		font.load().then((loadedFont) => {
 			document.fonts.add(loadedFont);
-			var resimler = [
-				"assets/images/back1.jpg",
-				"assets/images/back2.jpg",
-				"assets/images/back3.jpg",
-				"assets/images/back4.jpg",
-			];
+			var resimler = ["assets/images/back.jpg"];
 
 			var secilenResim = resimler[Math.floor(Math.random() * resimler.length)];
 			resim.src = secilenResim;
 			// Seçilen resime göre font rengini değiştir
-			if (secilenResim === "assets/images/back1.jpg") {
-				renk = "#232951";
-			} else {
-				renk = "#FFFFFF"; // Kırmızı renk için örnek
-			}
-
+			renk = "#FFFFFF"; // Kırmızı renk için örnek
 			// Resim yüklendikten sonra çizimi başlatın
 			resim.onload = function () {
 				bilet.drawImage(resim, 0, 0);
 				bilet.font = "45pt greycliff_demibold";
 				bilet.textAlign = "center";
 				bilet.fillStyle = renk;
-				bilet.fillText("Değerli Kardeşim ", 540, 635);
+				bilet.fillText("Değerli Kardeşim ", 540, 435);
 				bilet.font = "50pt gothamblack";
 				bilet.textAlign = "center";
 				bilet.fillStyle = renk;
-				bilet.fillText(isim, 540, 730);
+				bilet.fillText(isim, 540, 530);
 				bilet.font = "45pt greycliff_demibold";
 				bilet.textAlign = "center";
 				bilet.fillStyle = renk;
-				bilet.fillText("21 Yıllık Kazanımları ile Büyüyen", 540, 800);
+				bilet.fillText("21 Yıllık Kazanımları ile Büyüyen", 540, 600);
 				bilet.font = "45pt greycliff_demibold";
 				bilet.textAlign = "center";
 				bilet.fillStyle = renk;
-				bilet.fillText("Türkiye Sana Emanet", 540, 860);
+				bilet.fillText("Türkiye Sana Emanet", 540, 660);
 				// bilet.font = "45px greycliff_demibold";
 				// bilet.textAlign = "center";
 				// bilet.fillStyle = "#232951";

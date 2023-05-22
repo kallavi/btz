@@ -209,7 +209,7 @@ input {
 }
 
 .contentWrapper {
-	padding-top: 53px;
+	padding-top: 65px;
 	padding-right: 31px;
 	padding-bottom: 65px;
 	@media screen and (min-width: 1922px) {
@@ -219,6 +219,7 @@ input {
 		padding-right: 0;
 		padding-top: 0;
 		padding-bottom: 0;
+		align-self: center;
 		width: 100%;
 	}
 	@media screen and (max-width: 480px) {
@@ -312,7 +313,7 @@ input.form-control {
 	}
 	@media screen and (min-width: 1922px) {
 		width: 70% !important;
-		padding: 60px 0;
+		padding: 0 0;
 	}
 	@media screen and (max-width: 480px) {
 		padding-top: 0;
@@ -357,7 +358,7 @@ img {
 	text-align: center;
 	padding: 10px 0;
 	@media screen and (min-width: 1922px) {
-		padding-top: 60px!important;
+		// padding-top: 60px!important;
 		padding-bottom: 0!important;
 	}
 	p {
@@ -420,13 +421,16 @@ img {
 	height: 100%;
 	@media screen and (min-width: 991px) {
 		align-self: center;
+		min-height: 600px;
+		justify-content: space-between!important;
+		max-height: 800px;
 	}
 	@media screen and (max-width: 991px) {
 		height: auto;
 		margin: 0 auto !important;
 		width: 46%;
 		// height: 60%;
-		padding-top: 150px;
+		padding-top: 10vh;
 	}
 	@media screen and (max-width: 600px) {
 		width: 75%;

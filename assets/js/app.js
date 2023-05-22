@@ -40,26 +40,41 @@ function buyuk() {
 			// Resim yüklendikten sonra çizimi başlatın
 			resim.onload = function () {
 				bilet.drawImage(resim, 0, 0);
-				bilet.font = "45pt greycliff_demibold";
+				bilet.font = "40pt greycliff_demibold";
 				bilet.textAlign = "center";
 				bilet.fillStyle = renk;
 				bilet.fillText("Değerli Kardeşim ", 540, 435);
 				bilet.font = "50pt gothamblack";
 				bilet.textAlign = "center";
 				bilet.fillStyle = renk;
-				bilet.fillText(isim, 540, 530);
-				bilet.font = "45pt greycliff_demibold";
+				bilet.fillText(isim, 540, 520);
+				bilet.font = "40pt greycliff_demibold";
 				bilet.textAlign = "center";
 				bilet.fillStyle = renk;
-				bilet.fillText("21 Yıllık Kazanımları ile Büyüyen", 540, 600);
-				bilet.font = "45pt greycliff_demibold";
+				bilet.fillText("Yürekten Verdiğin Destekle", 540, 590);
+
+				const baslik = "Büyük Türkiye Zaferi ";
+				const altbaslik = " 'ne Giden Bu Yolda";
+
+				var baslikX = 540; // Başlığın X koordinatı
+				var baslikY = 660; // Başlığın Y koordinatı
+				var baslikGenislik = bilet.measureText(baslik).width;
+				var altbaslikGenislik = bilet.measureText(altbaslik).width;
+				var toplamGenislik = baslikGenislik + altbaslikGenislik;
+				var baslikXbaslangic = baslikX - toplamGenislik / 2;
+				bilet.font = "40pt greycliff_bold"; // Metni bold olarak yazdırmak için "bold" eklenmiştir
+				bilet.textAlign = "left";
+				bilet.fillStyle = renk;
+				bilet.fillText(baslik, baslikXbaslangic, baslikY);
+				bilet.font = "40pt greycliff_demibold";
+				bilet.textAlign = "left";
+				bilet.fillStyle = renk;
+				bilet.fillText(altbaslik, baslikXbaslangic + baslikGenislik, baslikY);
+
+				bilet.font = "40pt greycliff_demibold";
 				bilet.textAlign = "center";
 				bilet.fillStyle = renk;
-				bilet.fillText("Türkiye Sana Emanet", 540, 660);
-				// bilet.font = "45px greycliff_demibold";
-				// bilet.textAlign = "center";
-				// bilet.fillStyle = "#232951";
-				// bilet.fillText("sunuyorum.", 540, 860);
+				bilet.fillText("Bir ve Beraberiz.", 540, 730);
 			};
 		});
 	}

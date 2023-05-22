@@ -90,6 +90,9 @@ input {
         top: auto;
     }
 }
+.h-100{
+	min-height: -webkit-fill-available;
+}
 .mainBody {
 	background-color: #890000;
 	width: 100%;
@@ -222,11 +225,9 @@ input {
 		// padding-top: 126px;
 		// padding-bottom: 78px;
 		padding-bottom:0;
-		padding-top: 0;
 		// height: 48vh;
 		@media screen and (max-height: 700px) {
 			// padding-top: 60px;
-			padding-top: 0;
 		}
 	}
 	form {
@@ -422,6 +423,7 @@ img {
 		margin: 0 auto !important;
 		width: 46%;
 		height: 60%;
+		padding-top: 50px;
 	}
 	@media screen and (max-width: 600px) {
 		width: 75%;
@@ -448,7 +450,8 @@ img {
         right: -50px;
         width: 334px;
         bottom: -36px;
-        @media screen and (max-height:750px){
+		margin-right: 0;
+		@media screen and (max-height:750px){
             right: -16px;
             width: 347px;
             bottom: 0;

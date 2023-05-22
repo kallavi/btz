@@ -11551,6 +11551,10 @@ input ::placeholder {
     top: auto;
   }
 }
+.h-100 {
+  min-height: -webkit-fill-available;
+}
+
 .mainBody {
   background-color: #890000;
   width: 100%;
@@ -11697,12 +11701,6 @@ input ::placeholder {
 @media screen and (max-width: 480px) {
   .contentWrapper {
     padding-bottom: 0;
-    padding-top: 0;
-  }
-}
-@media screen and (max-width: 480px) and (max-height: 700px) {
-  .contentWrapper {
-    padding-top: 0;
   }
 }
 .contentWrapper form {
@@ -11942,6 +11940,7 @@ img.slogan2 {
     margin: 0 auto !important;
     width: 46%;
     height: 60%;
+    padding-top: 50px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -11976,6 +11975,7 @@ img.slogan2 {
     right: -50px;
     width: 334px;
     bottom: -36px;
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 992px) and (max-height: 750px) {

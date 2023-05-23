@@ -11510,6 +11510,7 @@ body {
   height: 100vh;
   max-height: -webkit-fill-available;
   height: -webkit-fill-available;
+  min-height: -webkit-fill-available;
   background-color: gray;
   overflow: hidden;
   margin: 0;
@@ -11551,6 +11552,10 @@ input ::placeholder {
     top: auto;
   }
 }
+.h-100 {
+  min-height: -webkit-fill-available;
+}
+
 .mainBody {
   background-color: #890000;
   width: 100%;
@@ -11603,7 +11608,7 @@ input ::placeholder {
     background-position: left;
     bottom: 0;
     top: 20%;
-    height: 53vh;
+    height: 59vh;
     width: 143vw;
     left: -67px;
     animation: slideDown2 2s linear forwards;
@@ -11618,15 +11623,15 @@ input ::placeholder {
 }
 @media screen and (max-width: 992px) and (max-height: 700px) {
   .mainBody:after {
-    height: 58vh;
+    height: 65vh;
     width: 99vw;
     left: -25px;
   }
 }
 @media screen and (max-width: 992px) and (max-height: 600px) {
   .mainBody:after {
-    height: 73vh;
-    width: 123vw;
+    height: 67vh;
+    width: 104vw;
     left: -36px;
   }
 }
@@ -11677,7 +11682,7 @@ input ::placeholder {
 }
 
 .contentWrapper {
-  padding-top: 53px;
+  padding-top: 65px;
   padding-right: 31px;
   padding-bottom: 65px;
 }
@@ -11691,18 +11696,13 @@ input ::placeholder {
     padding-right: 0;
     padding-top: 0;
     padding-bottom: 0;
+    align-self: center;
     width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
   .contentWrapper {
     padding-bottom: 0;
-    padding-top: 0;
-  }
-}
-@media screen and (max-width: 480px) and (max-height: 700px) {
-  .contentWrapper {
-    padding-top: 0;
   }
 }
 .contentWrapper form {
@@ -11743,7 +11743,7 @@ input ::placeholder {
 }
 
 .fixedImg {
-  max-width: 43%;
+  max-width: 42.7vw;
   width: 100%;
 }
 @media screen and (min-width: 1922px) {
@@ -11804,7 +11804,7 @@ input.form-control:focus, input.form-control:hover {
 @media screen and (min-width: 1922px) {
   .formWrapper {
     width: 70% !important;
-    padding: 60px 0;
+    padding: 0 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -11863,7 +11863,6 @@ img.slogan2 {
 }
 @media screen and (min-width: 1922px) {
   .paragraph {
-    padding-top: 60px !important;
     padding-bottom: 0 !important;
   }
 }
@@ -11906,7 +11905,7 @@ img.slogan2 {
 @media screen and (max-width: 992px) {
   .hashtag {
     transform: rotate(-90deg);
-    transform-origin: -32px -19px;
+    transform-origin: -49px -37px;
     font-size: 24px;
     font-family: "mark_proregular";
   }
@@ -11934,14 +11933,22 @@ img.slogan2 {
 }
 
 .mobileCenterContent {
-  align-self: center;
   height: 100%;
+}
+@media screen and (min-width: 991px) {
+  .mobileCenterContent {
+    align-self: center;
+    min-height: 600px;
+    justify-content: space-between !important;
+    max-height: 800px;
+  }
 }
 @media screen and (max-width: 991px) {
   .mobileCenterContent {
+    height: auto;
     margin: 0 auto !important;
     width: 46%;
-    height: 60%;
+    padding-top: 10vh;
   }
 }
 @media screen and (max-width: 600px) {
@@ -11976,6 +11983,7 @@ img.slogan2 {
     right: -50px;
     width: 334px;
     bottom: -36px;
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 992px) and (max-height: 750px) {
@@ -12382,6 +12390,7 @@ img.slogan2 {
 }
 .modal .imageContent {
   height: calc(100% - 100px);
+  overflow: hidden;
 }
 .modal .imageContent .imageWrapper {
   height: 100%;

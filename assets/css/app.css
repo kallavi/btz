@@ -11608,7 +11608,7 @@ input ::placeholder {
     background-position: left;
     bottom: 0;
     top: 20%;
-    height: 53vh;
+    height: 59vh;
     width: 143vw;
     left: -67px;
     animation: slideDown2 2s linear forwards;
@@ -11905,7 +11905,7 @@ img.slogan2 {
 @media screen and (max-width: 992px) {
   .hashtag {
     transform: rotate(-90deg);
-    transform-origin: -32px -19px;
+    transform-origin: -49px -37px;
     font-size: 24px;
     font-family: "mark_proregular";
   }

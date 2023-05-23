@@ -11510,6 +11510,7 @@ body {
   height: 100vh;
   max-height: -webkit-fill-available;
   height: -webkit-fill-available;
+  min-height: -webkit-fill-available;
   background-color: gray;
   overflow: hidden;
   margin: 0;
@@ -11622,7 +11623,7 @@ input ::placeholder {
 }
 @media screen and (max-width: 992px) and (max-height: 700px) {
   .mainBody:after {
-    height: 58vh;
+    height: 65vh;
     width: 99vw;
     left: -25px;
   }
@@ -12389,6 +12390,7 @@ img.slogan2 {
 }
 .modal .imageContent {
   height: calc(100% - 100px);
+  overflow: hidden;
 }
 .modal .imageContent .imageWrapper {
   height: 100%;

@@ -130,15 +130,3 @@ function toggleKeyboard(open) {
 		window.scrollTo(0, parseInt(scrollY || "0") * -1);
 	}
 }
-var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-
-if (isIOS) {
-  var inputElements = document.querySelectorAll('input, textarea');
-  for (var i = 0; i < inputElements.length; i++) {
-    inputElements[i].addEventListener('focus', function() {
-      setTimeout(function() {
-        window.scrollTo(0, 0);
-      }, 300); // Klavyenin tamamen açılmasını beklemek için 300ms bekleme süresi
-    });
-  }
-}

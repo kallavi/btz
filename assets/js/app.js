@@ -130,3 +130,6 @@ function toggleKeyboard(open) {
 		window.scrollTo(0, parseInt(scrollY || "0") * -1);
 	}
 }
+window.addEventListener('resize', function() {
+	document.body.style.height = window.innerHeight + 'px';
+  });

@@ -11509,7 +11509,7 @@ html,
 body {
   height: 100vh;
   max-height: -webkit-fill-available;
-  min-height: 100vh;
+  min-height: -webkit-fill-available;
   height: 100vh;
   background-color: gray;
   overflow: hidden;
@@ -11552,10 +11552,6 @@ input ::placeholder {
     top: auto;
   }
 }
-.h-100 {
-  min-height: -webkit-fill-available;
-}
-
 .mainBody {
   background-color: #890000;
   width: 100%;
@@ -11915,6 +11911,11 @@ img.slogan2 {
     margin: 0 auto !important;
     width: 46%;
     padding-top: 10vh;
+  }
+}
+@media screen and (max-width: 991px) and (max-height: 600px) {
+  .mobileCenterContent {
+    padding-top: 6vh;
   }
 }
 @media screen and (max-width: 600px) {

@@ -11560,11 +11560,11 @@ input ::placeholder {
   background-color: #890000;
   width: 100%;
   height: 100%;
-  background-image: url("../images/statics/bg.png");
+  background-image: url("../images/statics/bg-2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: multiply;
+  background-blend-mode: luminosity;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -11633,40 +11633,6 @@ input ::placeholder {
     height: 67vh;
     width: 104vw;
     left: -36px;
-  }
-}
-
-.bgImage {
-  mix-blend-mode: luminosity;
-  position: absolute;
-  height: 100%;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-.bgImage img {
-  max-width: 100%;
-  min-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media screen and (max-width: 992px) {
-  .bgImage img {
-    animation: translateImg 20s ease infinite;
-  }
-}
-@media screen and (max-width: 992px) {
-  .bgImage {
-    overflow: hidden;
-    width: 100%;
-  }
-  .bgImage img {
-    min-width: 100%;
-    height: 100%;
-    max-width: initial;
-    -o-object-fit: fill;
-       object-fit: fill;
   }
 }
 

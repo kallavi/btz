@@ -99,11 +99,11 @@ input {
 	background-color: #890000;
 	width: 100%;
 	height: 100%;
-	background-image: url("../images/statics/bg.png");
+	background-image: url("../images/statics/bg-2.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-blend-mode: multiply;
+	background-blend-mode: luminosity;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
@@ -168,38 +168,38 @@ input {
 
     }
 }
-.bgImage {
-	mix-blend-mode: luminosity;
-	position: absolute;
-	height: 100%;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	z-index: -1;
+// .bgImage {
+// 	mix-blend-mode: luminosity;
+// 	position: absolute;
+// 	height: 100%;
+// 	overflow: hidden;
+// 	top: 0;
+// 	left: 0;
+// 	z-index: -1;
 
 
-	img {
-		max-width: 100%;
-		min-height: 100%;
-		object-fit: cover;
+// 	img {
+// 		max-width: 100%;
+// 		min-height: 100%;
+// 		object-fit: cover;
 
-		@media screen and (max-width: 992px) {
-			animation: translateImg 20s ease infinite;
-		}
-	}
+// 		@media screen and (max-width: 992px) {
+// 			animation: translateImg 20s ease infinite;
+// 		}
+// 	}
 
-	@media screen and (max-width: 992px) {
-		overflow: hidden;
-		width: 100%;
+// 	@media screen and (max-width: 992px) {
+// 		overflow: hidden;
+// 		width: 100%;
 
-		img {
-			min-width: 100%;
-			height: 100%;
-			max-width: initial;
-			object-fit: fill;
-		}
-	}
-}
+// 		img {
+// 			min-width: 100%;
+// 			height: 100%;
+// 			max-width: initial;
+// 			object-fit: fill;
+// 		}
+// 	}
+// }
 .imageWrapper {
 	width: 100%;
 	overflow: hidden;

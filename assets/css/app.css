@@ -11630,8 +11630,8 @@ input ::placeholder {
 }
 @media screen and (max-width: 992px) and (max-height: 600px) {
   .mainBody:after {
-    height: 73vh;
-    width: 123vw;
+    height: 67vh;
+    width: 104vw;
     left: -36px;
   }
 }

@@ -24,6 +24,7 @@
 }
 .modal .imageContent {
   height: calc(100% - 100px);
+  overflow: hidden;
 }
 .modal .imageContent .imageWrapper {
   height: 100%;

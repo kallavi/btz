@@ -49,8 +49,9 @@ html,
 body {
     height: 100vh;
     max-height: -webkit-fill-available;
-    height: -webkit-fill-available;
+    // height: -webkit-fill-available;
     min-height: -webkit-fill-available;
+	height: 100vh;
     background-color: gray;
     overflow: hidden;
     margin: 0;

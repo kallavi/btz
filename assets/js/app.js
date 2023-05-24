@@ -121,8 +121,7 @@ function toggleKeyboard(open) {
 		// Klavye açıldığında
 		const scrollY = window.scrollY; // Kaydırma konumunu al
 		body.style.position = "fixed"; // Sayfa pozisyonunu sabitle
-		body.style.top = `-${scrollY}px`; // Kaydırma konumunu negatif olarak ayarla
-		body.style.overflow ="hidden";
+		body.style.top = `-${scrollY}px`; // Kaydırma konumunu negatif olarak ayarla 
 	} else {
 		// Klavye kapandığında
 		const scrollY = body.style.top;

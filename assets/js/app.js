@@ -114,20 +114,19 @@ function download() {
 	yeniSekme.document.title = dosya + "-kardesime";
 }
 
-// function toggleKeyboard(open) {
-// 	const body = document.getElementById("mainBody");
+function toggleKeyboard(open) {
+	const body = document.getElementById("mainBody");
 
-// 	if (open) {
-// 		// Klavye açıldığında
-// 		const scrollY = window.scrollY; // Kaydırma konumunu al
-// 		body.style.position = "fixed"; // Sayfa pozisyonunu sabitle
-// 		body.style.top = `-${scrollY}px`; // Kaydırma konumunu negatif olarak ayarla
-// 		body.style.overflow ="hidden";
-// 	} else {
-// 		// Klavye kapandığında
-// 		const scrollY = body.style.top;
-// 		body.style.position = "";
-// 		body.style.top = "";
-// 		window.scrollTo(0, parseInt(scrollY || "0") * -1);
-// 	}
-// }
+	if (open) {
+		// Klavye açıldığında
+		const scrollY = window.scrollY; // Kaydırma konumunu al
+		body.style.position = "fixed"; // Sayfa pozisyonunu sabitle
+		body.style.top = `-${scrollY}px`; // Kaydırma konumunu negatif olarak ayarla 
+	} else {
+		// Klavye kapandığında
+		const scrollY = body.style.top;
+		body.style.position = "";
+		body.style.top = "";
+		window.scrollTo(0, parseInt(scrollY || "0") * -1);
+	}
+}

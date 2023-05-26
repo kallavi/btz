@@ -31,6 +31,7 @@
 }
 .modal#modalTse .modal-dialog .modal-content .modal-body {
   padding: 0;
+  background: none;
 }
 
 .modal-dialog-scrollable .modal-body {

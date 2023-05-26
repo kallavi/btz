@@ -29,9 +29,6 @@
 .modal .imageContent .imageWrapper {
   height: 100%;
 }
-.modal#modalTse .modal-dialog .modal-content .modal-body {
-  padding: 0;
-}
 
 .modal-dialog-scrollable .modal-body {
   padding: 0;
